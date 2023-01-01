@@ -9,7 +9,6 @@ int wejscieCzujki = 10;   // D10 jako wejście dla czujnika IR
 int pk1 = 3;              // wyjście na przekaźnik 1 (pk1, active = LOW)
 int pk2 = 11;             // wyjście na przekaźnik nr 2 (pk2, active = LOW)
 int debug = 13;
-int cosik = 1; // test
 
 unsigned long staryCzas; // zmienna do porównania z aktualnym czasem
 unsigned long nowyCzas;  // zmienna do wpisywania aktualnego czasu
