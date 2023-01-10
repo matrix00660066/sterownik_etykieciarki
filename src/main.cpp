@@ -33,12 +33,15 @@ void odczytWejsc();
 void odliczanieCzasu();
 void funkcjaGlowna();
 
+/*#########################################################################################
+############################ początek pętli głównej #######################################
+#########################################################################################*/
 void loop()
-{ // początek pętli głównej
-  odczytWejsc();
-  { // skok do funkcji odczytu stanu wejść
-    if (przycisk == 0)
-    {                // jeśli odczytano wciśnięty przycisk (pedał = 0) to
+{
+  odczytWejsc(); // skok do funkcji odczytu stanu wejść
+  {
+    if (przycisk == 0) // jeśli odczytano wciśnięty przycisk (pedał = 0) to
+    {
       delay(50);     // czekamy 50ms
       odczytWejsc(); // ponownie odczytuję czy wciąż jest wciśnięty przycisk
       if (przycisk == 0)
